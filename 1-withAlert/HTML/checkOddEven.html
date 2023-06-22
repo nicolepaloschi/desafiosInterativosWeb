@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Par ou Ímpar</title>
+    <link rel="stylesheet" href="../CSS/checkOddEven.css" />
+    <script defer src="../JS/checkOddEven.js"></script>
+  </head>
+  <body>
+    <a href="index.html">Página Inicial</a>
+
+    <h1>Par ou Ímpar</h1>
+    <h3>Instruções:</h3>
+    <p>
+      Escolha um número e clique em CALCULAR para descobrir se ele é par ou
+      ímpar.
+    </p>
+
+    <input
+      type="text"
+      id="inputValue"
+      placeholder="Digite um número"
+      onkeypress="handleKeyPress(event)"
+    />
+    <button onclick="checkOddEven()">Calcular</button>
+  </body>
+</html>

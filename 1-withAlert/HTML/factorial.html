@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fatorial</title>
+    <link rel="stylesheet" href="../CSS/factorial.css" />
+    <script defer src="../JS/factorial.js"></script>
+  </head>
+  <body>
+    <a href="index.html">Página Inicial</a>
+
+    <h1>Fatorial</h1>
+    <h3>Instruções:</h3>
+    <p>
+      Digite um número e clique em CALCULAR. O resultado será o fatorial desse
+      número, ou seja, o produto de todos os números inteiros positivos menores
+      ou iguais a ele.
+    </p>
+    <h3>Exemplo:</h3>
+    <p>5 = 5 * 4 * 3 * 2 * 1 = 120</p>
+
+    <input
+      type="text"
+      id="inputNumber"
+      placeholder="Digite um número inteiro positivo"
+      onkeypress="handleKeyPress(event)"
+    />
+    <button onclick="factorial()">Calcular</button>
+  </body>
+</html>

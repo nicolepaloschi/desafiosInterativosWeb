@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palíndromo</title>
+    <link rel="stylesheet" href="../CSS/checkPalindrome.css" />
+    <script defer src="../JS/checkPalindrome.js"></script>
+  </head>
+  <body>
+    <a href="index.html">Página Inicial</a>
+
+    <h1>É palíndromo ou não?</h1>
+    <h3>Instruções:</h3>
+    <p>
+      Digite uma palavra ou frase e clique em VERIFICAR, para saber se é um
+      palíndromo ou não, i.e., se ela mantém o mesmo sentido quando lida de trás
+      para frente.
+    </p>
+    <h3>Exemplo:</h3>
+    <p>A sacada da casa.</p>
+
+    <input
+      type="text"
+      id="inputWords"
+      placeholder="Digite uma palavra ou frase"
+      onkeypress="handleKeyPress(event)"
+    />
+    <button onclick="checkPalindrome()">Verificar</button>
+  </body>
+</html>
