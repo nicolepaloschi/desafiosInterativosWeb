@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Boogaloo&family=Nunito:wght@200;300;400;600&family=Passion+One:wght@400;700&display=swap");
+
+:root {
+  --color-yellow: #ffcd1e;
+  --color-light-yellow: #fffde3;
+  --color-orange: #ff8900;
+  --color-dark-orange: #f24e1e;
+  --color-violet: #e498ff;
+  --color-green: #2cd997;
+  --color-blue: #3097ff;
+  --color-black: #191919;
+  --color-white: #ffffff;
+}
+
+body {
+  background-image: url("../images/background7.png");
+  background-size: cover;
+  margin: 3vh;
+  font-family: "Nunito";
+}
+
+h1 {
+  font-family: "Passion One";
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 9vh;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  margin: 30px;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+  width: 45vw;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-size: 22px;
+}
+
+h3 {
+  font-family: "Boogaloo";
+  font-size: 5vh;
+  text-transform: uppercase;
+  margin: 5px;
+  padding: 5px;
+}
+
+span {
+  border: 1px solid var(--color-black);
+  background-color: var(--color-black);
+  color: var(--color-dark-orange);
+  font-family: "Passion One";
+  letter-spacing: 2px;
+  padding: 3px;
+}
+
+input {
+  font-family: "Nunito";
+  width: 13vw;
+  color: var(--color-black);
+  text-decoration: none;
+  font-size: 3vh;
+  letter-spacing: 1px;
+  padding: 10px 17px 10px;
+  outline: 0;
+  border: 1px solid var(--color-black);
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+  touch-action: manipulation;
+  margin: 10px;
+}
+
+button,
+.button-link {
+  color: var(--color-dark-orange);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 10px 17px 10px;
+  outline: 0;
+  border: 2px solid var(--color-light-yellow);
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 10px;
+}
+
+button {
+  font-family: "Passion One";
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+button:after,
+.button-link:after {
+  content: "";
+  background-color: var(--color-black);
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+button:hover:after,
+.button-link:hover:after {
+  top: 0px;
+  left: 0px;
+}

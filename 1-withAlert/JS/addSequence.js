@@ -10,7 +10,11 @@ function handleKeyPress(event) {
 function addSequence() {
   let inputNumber = document.getElementById("inputNumber").value;
   var result = parseInt(inputNumber);
-  if (inputNumber === 0 || inputNumber === 1) {
+
+  if (isNaN(result)) {
+    alert("Digite um número positivo.");
+    return;
+  } else if (inputNumber === 0 || inputNumber === 1) {
     return 1;
   } else if (inputNumber < 0 || isNaN(inputNumber)) {
     alert("Digite um número positivo.");

@@ -8,6 +8,6 @@ function handleKeyPress(event) {
 
 function hideVowels() {
   let word = document.getElementById("inputWord").value.toLowerCase();
-  let noVowels = word.replace(/[aeiou]/gm, "*");
+  let noVowels = word.replace(/[aáâãeéêiíoóôõu]/gm, "*");
   alert(noVowels.toUpperCase());
 }

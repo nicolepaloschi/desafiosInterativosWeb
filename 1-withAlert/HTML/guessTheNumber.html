@@ -8,16 +8,16 @@
     <script defer src="../JS/guessTheNumber.js"></script>
   </head>
   <body>
-    <a href="index.html">Página Inicial</a>
+    <a href="index.html" class="button-link">Página Inicial</a>
 
     <h1>Adivinhe o número</h1>
-    <h3>Instruções:</h3>
-    <p>
-      Tente adivinhar o número que o computador pensou. Digite um número e
-      clique em ADIVINHE O NÚMERO. O computador dirá se a tentativa foi maior ou
-      menor do que a resposta correta.
-    </p>
+    <div class="container">
+      <h3>Instruções</h3>
+      <p>
+        Clique em <span>ADIVINHE O NÚMERO</span></br> e tente adivinhar o número sorteado pelo computador.
+      </p>
 
-    <button onclick="guessNumber()">ADIVINHE O NÚMERO</button>
+      <button onclick="guessNumber()">ADIVINHE O NÚMERO</button>
+    </div>
   </body>
 </html>

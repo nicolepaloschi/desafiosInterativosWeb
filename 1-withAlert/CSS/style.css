@@ -1,105 +1,162 @@
-@import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Comic+Neue:wght@400;700&family=Nanum+Pen+Script&family=Patrick+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Boogaloo&family=Nunito:wght@200;300;400;600&family=Passion+One:wght@400;700&display=swap");
+
+:root {
+  --color-yellow: #ffcd1e;
+  --color-light-yellow: #fffde3;
+  --color-orange: #ff8900;
+  --color-dark-orange: #f24e1e;
+  --color-violet: #e498ff;
+  --color-green: #2cd997;
+  --color-blue: #3097ff;
+  --color-black: #191919;
+  --color-white: #ffffff;
+}
 
 body {
-  /*background-image: url("../images/background2.jpg");*/
+  background-image: url("../images/background.png");
   background-size: cover;
   margin: 2vh;
-  background-color: #c7ff00;
-  font-family: "Comic Neue";
+  font-family: "Nunito";
 }
 
 h1 {
+  margin: 9px;
   text-align: center;
+  color: var(--color-black);
+  font-size: 9vh;
+  font-family: "Passion One";
+  text-transform: uppercase;
+  font-weight: 200;
+  text-shadow: 4px 4px 8px rgba(25, 25, 25, 0.8),
+    -2px -2px 0 var(--color-light-yellow);
+}
 
-  font-size: 8vh;
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+h3 {
+  font-family: "Boogaloo";
+  margin-top: 10px;
 }
 
 .container {
-  height: 75vh;
-
+  height: 80vh;
+  width: 95vw;
   display: grid;
+  align-items: center;
   grid-template-columns: 25% 75%;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 10px;
   margin: 0;
-  border: 1px solid black;
+  /*border: 1px solid var(--color-black);*/
 }
 
 aside {
-  border: 1px solid black;
-  grid-column: 1 / 2;
-  grid-row: 1 / 4;
-  height: 75vh;
-  width: 15vw;
-  margin: 0;
+  grid-area: 1 / 1 / 3 / 2;
+  margin: 20px 10px;
   padding: 0;
-  justify-self: right;
   background: rgba(255, 255, 255, 0.35);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(25, 25, 25, 0.37);
   backdrop-filter: blur(3.5px);
   -webkit-backdrop-filter: blur(3.5px);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  /*border: 1px solid var(--color-black);*/
+}
+
+aside p {
+  font-family: "Boogaloo";
+  font-size: 45px;
+  margin: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px 0;
+  padding: 20px 0;
 }
 
 .exercise-box {
-  border: 1px solid black;
+  justify-self: center;
   grid-column: 2 / 3;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 10px;
-  width: 60vw;
-  height: 75vh;
+  width: 65vw;
+  height: 80vh;
+  /*border: 1px solid var(--color-black);*/
 }
 
 .exercise {
   text-align: center;
-  /*width: 20vw;
-  height: 20vh;*/
-  padding: 0;
+  padding: 10px;
   background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(25, 25, 25, 0.37);
   backdrop-filter: blur(3.5px);
   -webkit-backdrop-filter: blur(3.5px);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  /*border: 1px solid rgba(255, 255, 255, 0.18);*/
 }
 
-.exercise.stretched {
-  grid-row: 2 / 4;
-  padding-top: 75px;
-  /*height: 40vh;*/
+.exercise1 {
+  grid-area: 1 / 1 / 1 / 2;
 }
 
-.exercise.single {
-  grid-column: 1 / 3;
-  grid-row: 3 / 4;
-  /*height: 40vh;*/
+.exercise2 {
+  grid-area: 1 / 2 / 1 / 3;
 }
 
-/* CSS */
+.exercise3 {
+  grid-area: 1 / 3 / 1 / 4;
+}
+
+.exercise4 {
+  grid-area: 2 / 1 / 2 / 2;
+}
+
+.exercise5 {
+  grid-area: 2 / 2 / 2 / 3;
+  padding: 10px 7px;
+}
+
+.exercise6 {
+  grid-area: 2 / 3 / 4 / 4;
+  position: relative;
+}
+
+.exercise6 h3 {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+}
+
+.exercise6 p {
+  position: absolute;
+  top: 30%;
+}
+
+.exercise6 a {
+  position: absolute;
+  top: 55%;
+  left: 35%;
+}
+
+.exercise7 {
+  grid-area: 3 / 1 / 3 / 3;
+}
+
 .button-link {
-  color: #c7ff00;
+  color: var(--color-yellow);
   text-decoration: none;
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 18px;
   letter-spacing: 1px;
   padding: 10px 17px 10px;
   outline: 0;
-  border: 1px solid gray;
+  border: 2px solid var(--color-black);
   cursor: pointer;
   position: relative;
-  background-color: rgba(0, 0, 0, 0);
-  user-select: none;
-  -webkit-user-select: none;
+  background-color: rgba(25, 25, 25, 0);
   touch-action: manipulation;
 }
 
 .button-link:after {
   content: "";
-  background-color: black;
+  background-color: var(--color-blue);
   width: 100%;
   z-index: -1;
   position: absolute;

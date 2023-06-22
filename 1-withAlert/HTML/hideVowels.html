@@ -8,23 +8,26 @@
     <script defer src="../JS/hideVowels.js"></script>
   </head>
   <body>
-    <a href="index.html">Página Inicial</a>
+    <a href="index.html" class="button-link">Página Inicial</a>
 
     <h1>Ocultar Vogais</h1>
-    <h3>Instruções:</h3>
-    <p>
-      Digite uma palavra e clique em OCULTE AS VOGAIS. O resultado será a
-      palavra escolhida com as vogais substituídas por *.
-    </p>
-    <h3>Exemplo:</h3>
-    <p>Beterraba = B*t*rr*b*</p>
+    <div class="container">
+      <h3>Instruções</h3>
+      <p>
+        Digite uma palavra e clique em <span>OCULTE AS VOGAIS</span></br> O resultado será a
+        palavra escolhida com as vogais substituídas por asterisco (*).
+      </p>
+      <h3>Exemplo</h3>
+      <p>Paralelepípedo = P*R*L*L*P*P*D*</p>
 
-    <input
-      type="text"
-      id="inputWord"
-      placeholder="Digite uma palavra"
-      onkeypress="handleKeyPress(event)"
-    />
-    <button onclick="hideVowels()">Oculte as vogais</button>
+      <input
+        type="text"
+        id="inputWord"
+        placeholder="Digite uma palavra"
+        onkeypress="handleKeyPress(event)"
+      />
+
+      <button onclick="hideVowels()">Oculte as vogais</button>
+    </div>
   </body>
 </html>

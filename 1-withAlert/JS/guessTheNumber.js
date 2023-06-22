@@ -4,7 +4,13 @@ function guessNumber() {
     var guess;
 
     do {
-      guess = parseInt(prompt("Digite seu palpite (um número de 0 a 100):"));
+      guess = prompt("Digite seu palpite (um número de 0 a 100):");
+
+      if (guess === null || guess === "") {
+        return;
+      } else {
+        guess = parseInt(guess);
+      }
 
       if (isNaN(guess) || guess < 0 || guess > 100) {
         alert("Valor inválido. Escolha um número entre 0 e 100.");
